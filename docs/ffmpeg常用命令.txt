@@ -1,0 +1,19 @@
+ffmpeg -i input_file -vcodec copy -an output_file_video　　//分离视频流
+ffmpeg -i input_file -vcodec copy -vn output_file_audio　　//分离音频流
+
+ffmpegCommandPathName -i vedioPathName -ac 2 -r 29.97 vedioDestinationPathName //转换格式
+ffmpegCommandPathName -i vedioPathName -y -f image2 -ss cutTime imageDestinationPathName //截图
+
+ffmpeg –i test.avi –r 1(可以是0.5 .etc) –f image2 image-%3d.jpeg        //提取图片(组)
+ffmpeg -ss 0:1:30 -t 0:0:20 -i input.avi -vcodec copy -acodec copy output.avi    //剪切视频
+//-r 提取图像的频率，-ss 开始时间，-t 持续时间
+
+ffmpeg –i video_file –i audio_file –vcodec copy –acodec copy output_file //视频封装(合成)
+
+ffmpeg -f gdigrab -i desktop out.mpg  //屏幕抓取，(截屏、屏幕录制等等)
+//从屏幕的（10,20）点处开始，抓取640x480的屏幕，设定帧率为5
+ffmpeg -f gdigrab -framerate 5 -offset_x 10 -offset_y 20 -video_size 640x480 -i desktop out.mpg
+
+
+ffmpeg -i capx.mp4 -ss 0 -t 10 -s 320x240 -pix_fmt rgb24 jidu1.gif  //生成GIF
+
