@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="main_pane" fx:controller="xuyihao.formatter.ui.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="main_text_field_inputFile" layoutX="97.0" layoutY="14.0" prefHeight="23.0" prefWidth="465.0" />
+      <TextField fx:id="main_text_field_outputFile" layoutX="97.0" layoutY="47.0" prefHeight="23.0" prefWidth="465.0" />
+      <Button fx:id="main_button_inputFileChoose" layoutX="571.0" layoutY="14.0" mnemonicParsing="false" text="选择文件" />
+      <Button fx:id="main_button_outputFileChoose" layoutX="571.0" layoutY="47.0" mnemonicParsing="false" text="选择路径" />
+      <Label layoutX="14.0" layoutY="18.0" text="输入文件：" />
+      <Label layoutX="14.0" layoutY="51.0" text="输出路径：" />
+      <TabPane layoutX="14.0" layoutY="70.0" prefHeight="399.0" prefWidth="620.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="main_tab_exchange" text="转换">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="85.0" layoutY="63.0" text="输出文件名：" />
+                        <TextField fx:id="main_tab_exchange_text_field_outputFileName" layoutX="40.0" layoutY="89.0" />
+                        <Label layoutX="269.0" layoutY="63.0" text="输出文件后缀：" />
+                        <ChoiceBox fx:id="main_tab_exchange_choise_box_outputFileType_splitVideo" layoutX="224.0" layoutY="89.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="main_tab_exchange_choise_box_outputFileType_splitAudio" layoutX="224.0" layoutY="124.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="main_tab_exchange_choise_box_outputFileType_convertFromat" layoutX="224.0" layoutY="162.0" prefWidth="150.0" />
+                        <Button fx:id="main_tab_exchange_button_splitVideo" layoutX="417.0" layoutY="89.0" mnemonicParsing="false" text="分离视频" />
+                        <Button fx:id="main_tab_exchange_button_splitAudio" layoutX="417.0" layoutY="124.0" mnemonicParsing="false" text="分离音频" />
+                        <Button fx:id="main_tab_exchange_button_convertFromat" layoutX="417.0" layoutY="162.0" mnemonicParsing="false" text="转换格式" />
+                        <Label layoutX="429.0" layoutY="63.0" text="操作：" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab fx:id="main_tab_cutImage" text="截图图片">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="65.0" layoutY="59.0" text="截取时刻(s)：" />
+                        <TextField fx:id="main_tab_cutImage_text_field_cutTime" layoutX="33.0" layoutY="82.0" />
+                        <Button fx:id="main_tab_cutImage_button_beginCut" layoutX="83.0" layoutY="220.0" mnemonicParsing="false" text="截取单张图片" />
+                        <Label layoutX="66.0" layoutY="136.0" text="输出文件名：" />
+                        <TextField fx:id="main_tab_cutImage_text_field_outputFileName" layoutX="33.0" layoutY="162.0" />
+                        <Label layoutX="215.0" layoutY="136.0" text="输出文件后缀：" />
+                        <ChoiceBox fx:id="main_tab_cutImage_choise_box_outputFileType" layoutX="182.0" layoutY="162.0" prefWidth="150.0" />
+                        <Label layoutX="395.0" layoutY="136.0" text="截取频率：" />
+                        <TextField fx:id="main_tab_cutImage_text_field_cutRate" layoutX="356.0" layoutY="162.0" />
+                        <Button fx:id="main_tab_cutImage_button_begincutoutVideoForImageArray" layoutX="182.0" layoutY="220.0" mnemonicParsing="false" text="截取图片组" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="main_tab_cutVideo" text="视频片段截取">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="56.0" layoutY="51.0" text="输出文件名：" />
+                        <Label layoutX="222.0" layoutY="51.0" text="输出文件后缀：" />
+                        <TextField fx:id="main_tab_cutVideo_text_field_outputFileName" layoutX="23.0" layoutY="79.0" />
+                        <ChoiceBox fx:id="main_tab_cutVideo_choise_box_outputFileType" layoutX="189.0" layoutY="79.0" prefWidth="150.0" />
+                        <Label layoutX="62.0" layoutY="153.0" text="开始时间：" />
+                        <Label layoutX="228.0" layoutY="153.0" text="持续时间：" />
+                        <TextField fx:id="main_tab_cutVideo_text_field_beginTime" layoutX="23.0" layoutY="185.0" />
+                        <TextField fx:id="main_tab_cutVideo_text_field_lastTime" layoutX="189.0" layoutY="185.0" />
+                        <Button fx:id="main_tab_cutVideo_button_beginCut" layoutX="368.0" layoutY="185.0" mnemonicParsing="false" text="开始截取视频" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="main_tab_combine_video" text="视频音频合成">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="43.0" text="原视频：" />
+                        <Label layoutX="34.0" layoutY="114.0" text="原音频：" />
+                        <TextField fx:id="main_tab_combine_video_text_field_inputVideo" layoutX="34.0" layoutY="76.0" />
+                        <TextField fx:id="main_tab_combine_video_text_field_inputAudio" layoutX="34.0" layoutY="144.0" />
+                        <Button fx:id="main_tab_combine_video_button_chooseInputVideo" layoutX="179.0" layoutY="76.0" mnemonicParsing="false" text="选择文件" />
+                        <Button fx:id="main_tab_combine_video_button_chooseInputAudio" layoutX="179.0" layoutY="144.0" mnemonicParsing="false" text="选择文件" />
+                        <Label layoutX="34.0" layoutY="213.0" text="输出文件名：" />
+                        <TextField fx:id="main_tab_combine_video_text_field_outputFileName" layoutX="34.0" layoutY="238.0" />
+                        <Label layoutX="207.0" layoutY="213.0" text="输出文件后缀：" />
+                        <ChoiceBox fx:id="main_tab_combine_video_choise_box_outputFileType" layoutX="179.0" layoutY="238.0" prefWidth="150.0" />
+                        <Button fx:id="main_tab_combine_video_button_beginCombine" layoutX="106.0" layoutY="293.0" mnemonicParsing="false" text="开始合成" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="main_tab_screenShut" text="截屏&amp;录制">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="40.0" text="屏幕开始位置坐标X：" />
+                        <Label layoutX="142.0" layoutY="108.0" text="截取屏幕大小Y：" />
+                        <Label layoutX="14.0" layoutY="108.0" text="截取屏幕大小X：" />
+                        <Label layoutX="142.0" layoutY="40.0" text="屏幕开始位置坐标Y：" />
+                        <TextField fx:id="main_tab_screenShut_text_field_offsetX" layoutX="14.0" layoutY="67.0" prefHeight="23.0" prefWidth="108.0" />
+                        <TextField fx:id="main_tab_screenShut_text_field_offsetY" layoutX="146.0" layoutY="67.0" prefHeight="23.0" prefWidth="108.0" />
+                        <TextField fx:id="main_tab_screenShut_text_field_sizeX" layoutX="14.0" layoutY="140.0" prefHeight="23.0" prefWidth="108.0" />
+                        <TextField fx:id="main_tab_screenShut_text_field_sizeY" layoutX="146.0" layoutY="140.0" prefHeight="23.0" prefWidth="108.0" />
+                        <Label layoutX="14.0" layoutY="185.0" text="输出文件名：" />
+                        <TextField fx:id="main_tab_screenShut_text_field_outputFileName" layoutX="14.0" layoutY="200.0" prefHeight="23.0" prefWidth="108.0" />
+                        <Label layoutX="146.0" layoutY="185.0" text="输出文件后缀：" />
+                        <ChoiceBox fx:id="main_tab_screenShut_choise_box_outputFileType" layoutX="146.0" layoutY="200.0" prefWidth="150.0" />
+                        <Button fx:id="main_tab_screenShut_button_screenShut" layoutX="33.0" layoutY="259.0" mnemonicParsing="false" text="截取屏幕" />
+                        <Label layoutX="387.0" layoutY="40.0" text="视频录制帧率：" />
+                        <TextField fx:id="main_tab_screenShut_text_field_frameRate" layoutX="375.0" layoutY="67.0" prefHeight="23.0" prefWidth="108.0" />
+                        <Button fx:id="main_tab_screenShut_button_recordScreen" layoutX="397.0" layoutY="200.0" mnemonicParsing="false" text="屏幕录制" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="main_tab_makeGIF" text="GIF">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="37.0" text="开始时刻（s）：" />
+                        <Label layoutX="14.0" layoutY="82.0" text="持续时刻（s）：" />
+                        <Label layoutX="14.0" layoutY="130.0" text="截取尺寸X：" />
+                        <Label layoutX="169.0" layoutY="130.0" text="截取尺寸Y：" />
+                        <TextField fx:id="main_tab_makeGIF_text_field_beginTime" layoutX="13.0" layoutY="52.0" />
+                        <TextField fx:id="main_tab_makeGIF_text_field_lastTime" layoutX="13.0" layoutY="97.0" />
+                        <TextField fx:id="main_tab_makeGIF_text_field_sizeX" layoutX="13.0" layoutY="145.0" />
+                        <TextField fx:id="main_tab_makeGIF_text_field_sizeY" layoutX="168.0" layoutY="145.0" />
+                        <Label layoutX="14.0" layoutY="195.0" text="输出文件名：" />
+                        <TextField fx:id="main_tab_makeGIF_text_field_outputFileName" layoutX="13.0" layoutY="210.0" />
+                        <Label layoutX="151.0" layoutY="214.0" text=".gif" />
+                        <Button fx:id="main_tab_makeGIF_button_beginMakeGIF" layoutX="55.0" layoutY="273.0" mnemonicParsing="false" text="开始制作GIF" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
