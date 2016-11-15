@@ -15,6 +15,23 @@ public class CommonUtils {
 	private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 	/**
+	 * <pre>
+	 * 线程阻塞milliseconds时间
+	 * 
+	 * 简化线程等待时间的方法
+	 * </pre>
+	 * 
+	 * @param milliseconds
+	 */
+	public static void threadWait(long milliseconds) {
+		try {
+			Thread.sleep(milliseconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
 	 * 将一个命令行字串转换成列表（不含空格）
 	 * 
 	 * @param command

@@ -1,10 +1,10 @@
-package xuyihao.formatter.ui.executor;
+package xuyihao.formatter.ui.common;
 
 import java.io.File;
 
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
-import xuyihao.formatter.ui.MainWindow;
+import xuyihao.formatter.ui.window.main.MainWindow;
 
 /**
  * 选择文件&路径

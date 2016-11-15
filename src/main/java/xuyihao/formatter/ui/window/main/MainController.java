@@ -1,4 +1,4 @@
-package xuyihao.formatter.ui;
+package xuyihao.formatter.ui.window.main;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -51,7 +51,7 @@ public class MainController {
 	protected void exchangeSplitVideoClick() {
 		new ExchangeExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
 				main_tab_exchange_text_field_outputFileName, main_tab_exchange_choise_box_outputFileType_splitVideo,
-				main_tab_exchange_choise_box_outputFileType_splitVideo,
+				main_tab_exchange_choise_box_outputFileType_splitAudio,
 				main_tab_exchange_choise_box_outputFileType_convertFormat).splitVideo();
 	}
 
@@ -59,7 +59,7 @@ public class MainController {
 	protected void exchangeSplitAudioClick() {
 		new ExchangeExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
 				main_tab_exchange_text_field_outputFileName, main_tab_exchange_choise_box_outputFileType_splitVideo,
-				main_tab_exchange_choise_box_outputFileType_splitVideo,
+				main_tab_exchange_choise_box_outputFileType_splitAudio,
 				main_tab_exchange_choise_box_outputFileType_convertFormat).splitAudio();
 	}
 
@@ -67,7 +67,7 @@ public class MainController {
 	protected void exchangeConvertFormatClick() {
 		new ExchangeExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
 				main_tab_exchange_text_field_outputFileName, main_tab_exchange_choise_box_outputFileType_splitVideo,
-				main_tab_exchange_choise_box_outputFileType_splitVideo,
+				main_tab_exchange_choise_box_outputFileType_splitAudio,
 				main_tab_exchange_choise_box_outputFileType_convertFormat).convertFormat();
 	}
 

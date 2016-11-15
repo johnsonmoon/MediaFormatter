@@ -224,7 +224,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="xuyihao.formatter.ui.MainWindow" />
+      <option name="MAIN_CLASS_NAME" value="xuyihao.formatter.ui.window.main.MainWindow" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />

@@ -1,4 +1,4 @@
-package xuyihao.formatter.ui;
+package xuyihao.formatter.ui.window.main;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
