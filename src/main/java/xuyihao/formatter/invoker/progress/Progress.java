@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.List;
 
+import xuyihao.formatter.util.CommonUtils;
+
 /**
  * 执行外部进程输入流获取外部进程进度信息类
  * 
@@ -19,8 +21,20 @@ public class Progress {
 	private BufferedReader errorReader = null;
 	private OutputStreamWriter writer = null;
 
+	private String cmd = "";
+
 	public Progress(List<String> cmds) {
 		this.builder = new ProcessBuilder(cmds);
+		cmd = CommonUtils.generateCommandFromCommandList(cmds);
+	}
+
+	/**
+	 * 获取具体的命令行命令字串
+	 * 
+	 * @return
+	 */
+	public String getCommand() {
+		return cmd;
 	}
 
 	/**

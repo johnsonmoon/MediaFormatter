@@ -32,6 +32,21 @@ public class CommonUtils {
 	}
 
 	/**
+	 * 将命令行字串列表转换成命令行字串
+	 * 
+	 * @param cmdList
+	 * @return
+	 */
+	public static String generateCommandFromCommandList(List<String> cmdList) {
+		String command = "";
+		for (String cmd : cmdList) {
+			command += (cmd + " ");
+		}
+		command = command.trim();
+		return command;
+	}
+
+	/**
 	 * 将一个命令行字串转换成列表（不含空格）
 	 * 
 	 * @param command

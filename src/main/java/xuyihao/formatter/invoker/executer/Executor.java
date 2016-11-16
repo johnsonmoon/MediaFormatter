@@ -13,7 +13,7 @@ import xuyihao.formatter.util.CommonUtils;
  *
  */
 public class Executor {
-	private static final String ffmpegExecutorPathName = AppPropertiesLoader.getAppProperties()
+	public static final String ffmpegExecutorPathName = AppPropertiesLoader.getAppProperties()
 			.getProperty("FFMPEG_EXECUTOR_PATHNAME");
 
 	/**

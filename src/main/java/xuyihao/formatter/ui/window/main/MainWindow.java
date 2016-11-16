@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
+import xuyihao.formatter.invoker.executer.Executor;
+import xuyihao.formatter.util.CommonUtils;
 
 /**
  * 
@@ -36,6 +38,7 @@ public class MainWindow extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Media Formatter");
 		primaryStage.show();
+		CommonUtils.outputLine(Executor.ffmpegExecutorPathName);
 	}
 
 	/**

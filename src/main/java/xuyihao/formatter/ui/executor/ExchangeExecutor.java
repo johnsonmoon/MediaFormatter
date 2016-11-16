@@ -59,6 +59,7 @@ public class ExchangeExecutor {
 						String inputVideoPathName = inputFile;
 						String outputVideoPathName = outputPath + File.separator + outputName + splitVideoOutputType;
 						final Progress progress = Executor.splitVideo(inputVideoPathName, outputVideoPathName);
+						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {
 								progress.waitFor();
@@ -90,6 +91,7 @@ public class ExchangeExecutor {
 						String inputVideoPathName = inputFile;
 						String outputAudioPathName = outputPath + File.separator + outputName + splitAudioOutputType;
 						final Progress progress = Executor.splitAudio(inputVideoPathName, outputAudioPathName);
+						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {
 								progress.waitFor();
@@ -121,6 +123,7 @@ public class ExchangeExecutor {
 						String inputVideoPathName = inputFile;
 						String outputVideoPathName = outputPath + File.separator + outputName + convertFormatOutputType;
 						final Progress progress = Executor.convertFromat(inputVideoPathName, outputVideoPathName);
+						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {
 								progress.waitFor();

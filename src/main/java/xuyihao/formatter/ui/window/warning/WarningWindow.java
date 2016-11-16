@@ -23,7 +23,6 @@ public class WarningWindow {
 	 */
 	private TextArea textArea;
 	private Button btnConfirm;
-	private Button btnCancel;
 
 	public WarningWindow(String warningMessage) {
 		Parent parent = null;
@@ -50,7 +49,6 @@ public class WarningWindow {
 		textArea.setText(text);
 		textArea.setFont(Font.font(24.0));
 		btnConfirm = (Button) parent.lookup("#warningWindow_button_confirm");
-		btnCancel = (Button) parent.lookup("#warningWindow_button_cancel");
 	}
 
 	/**
@@ -58,12 +56,6 @@ public class WarningWindow {
 	 */
 	private void initEvent() {
 		btnConfirm.setOnAction(new EventHandler<ActionEvent>() {
-			public void handle(ActionEvent event) {
-				WarningWindow.this.stage.close();
-			}
-		});
-
-		btnCancel.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
 				WarningWindow.this.stage.close();
 			}

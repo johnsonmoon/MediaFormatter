@@ -4,8 +4,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import xuyihao.formatter.ui.common.FilePathChooser;
+import xuyihao.formatter.ui.executor.CombineVideoExecutor;
+import xuyihao.formatter.ui.executor.CutImageExecutor;
+import xuyihao.formatter.ui.executor.CutVideoExecutor;
 import xuyihao.formatter.ui.executor.ExchangeExecutor;
+import xuyihao.formatter.ui.executor.GIFExecutor;
 import xuyihao.formatter.ui.executor.MainWindowExecutor;
+import xuyihao.formatter.ui.executor.ScreenShutExecutor;
 
 /**
  * JavaFx controller 通过注解将控件对象与配置文件的id一一对应
@@ -90,16 +96,17 @@ public class MainController {
 	private TextField main_tab_cutImage_text_field_cutRate;
 
 	@FXML
-	private Button main_tab_cutImage_button_begincutoutVideoForImageArray;
-
-	@FXML
 	protected void cutImageBeginCutClick() {
-
+		new CutImageExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
+				main_tab_cutImage_text_field_cutTime, main_tab_cutImage_text_field_outputFileName,
+				main_tab_cutImage_choise_box_outputFileType, main_tab_cutImage_text_field_cutRate).cutSingleImage();
 	}
 
 	@FXML
 	protected void cutImageBegincutoutVideoForImageCutClick() {
-
+		new CutImageExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
+				main_tab_cutImage_text_field_cutTime, main_tab_cutImage_text_field_outputFileName,
+				main_tab_cutImage_choise_box_outputFileType, main_tab_cutImage_text_field_cutRate).cutImageArray();
 	}
 
 	/**
@@ -118,11 +125,10 @@ public class MainController {
 	private TextField main_tab_cutVideo_text_field_lastTime;
 
 	@FXML
-	private Button main_tab_cutVideo_button_beginCut;
-
-	@FXML
 	protected void cutVideoBeginCutClick() {
-
+		new CutVideoExecutor(main_text_field_inputFile, main_text_field_outputFilePath,
+				main_tab_cutVideo_text_field_outputFileName, main_tab_cutVideo_choise_box_outputFileType,
+				main_tab_cutVideo_text_field_beginTime, main_tab_cutVideo_text_field_lastTime).cutVideo();
 	}
 
 	/**
@@ -135,33 +141,26 @@ public class MainController {
 	private TextField main_tab_combine_video_text_field_inputAudio;
 
 	@FXML
-	private Button main_tab_combine_video_button_chooseInputVideo;
-
-	@FXML
-	private Button main_tab_combine_video_button_chooseInputAudio;
-
-	@FXML
 	private TextField main_tab_combine_video_text_field_outputFileName;
 
 	@FXML
 	private ChoiceBox<String> main_tab_combine_video_choise_box_outputFileType;
 
 	@FXML
-	private Button main_tab_combine_video_button_beginCombine;
-
-	@FXML
 	protected void combineVideoChooseInputVideoClick() {
-
+		main_tab_combine_video_text_field_inputVideo.setText(FilePathChooser.chooseFile());
 	}
 
 	@FXML
 	protected void combineVideoChooseInputAudioClick() {
-
+		main_tab_combine_video_text_field_inputAudio.setText(FilePathChooser.chooseFile());
 	}
 
 	@FXML
 	protected void combineVideoBeginCombineClick() {
-
+		new CombineVideoExecutor(main_text_field_outputFilePath, main_tab_combine_video_text_field_inputVideo,
+				main_tab_combine_video_text_field_inputAudio, main_tab_combine_video_text_field_outputFileName,
+				main_tab_combine_video_choise_box_outputFileType).combineVideo();
 	}
 
 	/**
@@ -186,22 +185,22 @@ public class MainController {
 	private ChoiceBox<String> main_tab_screenShut_choise_box_outputFileType;
 
 	@FXML
-	private Button main_tab_screenShut_button_screenShut;
-
-	@FXML
 	private TextField main_tab_screenShut_text_field_frameRate;
 
 	@FXML
-	private Button main_tab_screenShut_button_recordScreen;
-
-	@FXML
 	protected void screenShutScreenShut() {
-
+		new ScreenShutExecutor(main_text_field_outputFilePath, main_tab_screenShut_text_field_offsetX,
+				main_tab_screenShut_text_field_offsetY, main_tab_screenShut_text_field_sizeX,
+				main_tab_screenShut_text_field_sizeY, main_tab_screenShut_text_field_outputFileName,
+				main_tab_screenShut_choise_box_outputFileType, main_tab_screenShut_text_field_frameRate).screenShut();
 	}
 
 	@FXML
 	protected void screenShutRecordScreen() {
-
+		new ScreenShutExecutor(main_text_field_outputFilePath, main_tab_screenShut_text_field_offsetX,
+				main_tab_screenShut_text_field_offsetY, main_tab_screenShut_text_field_sizeX,
+				main_tab_screenShut_text_field_sizeY, main_tab_screenShut_text_field_outputFileName,
+				main_tab_screenShut_choise_box_outputFileType, main_tab_screenShut_text_field_frameRate).RecordScreen();
 	}
 
 	/**
@@ -223,10 +222,9 @@ public class MainController {
 	private TextField main_tab_makeGIF_text_field_outputFileName;
 
 	@FXML
-	private Button main_tab_makeGIF_button_beginMakeGIF;
-
-	@FXML
 	protected void makeGIFBeginMakeClick() {
-
+		new GIFExecutor(main_text_field_inputFile, main_text_field_outputFilePath, main_tab_makeGIF_text_field_beginTime,
+				main_tab_makeGIF_text_field_lastTime, main_tab_makeGIF_text_field_sizeX, main_tab_makeGIF_text_field_sizeY,
+				main_tab_makeGIF_text_field_outputFileName).makeGIF();
 	}
 }
