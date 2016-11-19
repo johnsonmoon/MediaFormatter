@@ -63,10 +63,10 @@ public class CutVideoExecutor {
 							if (lastTime == null || lastTime.equals("")) {
 								new WarningWindow("lastTime is null !").show();
 							} else {
-								final InformationWindow informationWindow = new InformationWindow("视频截取中...", 18.0);
-								informationWindow.show();
 								final Progress progress = Executor.cutoutVideo(inputFile,
 										outputPath + File.separator + outputFileName + outputFileType, beginTime, lastTime);
+								final InformationWindow informationWindow = new InformationWindow("视频截取中...", 18.0, progress);
+								informationWindow.show();
 								informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 								new Thread(new Runnable() {
 									public void run() {

@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b46b123-017b-4b99-8993-a1e98d9635e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xuyihao/formatter/util/CommonUtils.class" afterPath="$PROJECT_DIR$/target/classes/xuyihao/formatter/util/CommonUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/executer/Executor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/executer/Executor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/progress/Progress.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/progress/Progress.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutVideoExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutVideoExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ExchangeExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ExchangeExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/GIFExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/GIFExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ScreenShutExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ScreenShutExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/InformationWindow.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/InformationWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/main_window.fxml" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/main_window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/warning/WarningWindow.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/warning/WarningWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/warning/warning_window.fxml" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/warning/warning_window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/util/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/xuyihao/formatter/util/CommonUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/system_config.properties" afterPath="$PROJECT_DIR$/src/main/resources/system_config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/xuyihao/MediaFormatter/pom.properties" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/xuyihao/MediaFormatter/pom.properties" />
     </list>
     <ignored path="MediaFormatter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +36,10 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="91">
+              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1655#1685#0" expanded="true" />
                 <element signature="e#2850#2858#0" expanded="true" />
                 <element signature="e#3006#3014#0" expanded="true" />
                 <element signature="e#3141#3149#0" expanded="true" />
@@ -60,29 +48,6 @@
                 <element signature="e#3573#3581#0" expanded="true" />
                 <element signature="e#3715#3723#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="information_window.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CutImageExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,16 +80,22 @@
         <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/main_window.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/InformationWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ScreenShutExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/GIFExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ExchangeExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutVideoExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -144,8 +115,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="54" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1394" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -172,9 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,8 +175,119 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaFormatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="executor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,9 +312,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\JohnsonWorkspace\MediaFormatter\target\classes\xuyihao\formatter\ui\window\information" />
       <recent name="C:\Users\Administrator\JohnsonWorkspace\MediaFormatter\target\classes\xuyihao\formatter\ui\window\warning" />
       <recent name="C:\Users\Administrator\JohnsonWorkspace\MediaFormatter\target\classes\xuyihao\formatter\ui\window\main" />
-      <recent name="C:\Users\Administrator\JohnsonWorkspace\MediaFormatter\target\classes\xuyihao\formatter\ui\window\information" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainWindow">
@@ -731,31 +810,32 @@
       <workItem from="1479026506514" duration="720000" />
       <workItem from="1479085484956" duration="6862000" />
       <workItem from="1479269646238" duration="1835000" />
+      <workItem from="1479348969222" duration="54000" />
+      <workItem from="1479543824846" duration="1137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14945000" />
+    <option name="totallyTimeSpent" value="16136000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24693252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24617347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19095092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3113497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2936508" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -766,6 +846,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -817,6 +898,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2850#2858#0" expanded="true" />
+            <element signature="e#3006#3014#0" expanded="true" />
+            <element signature="e#3141#3149#0" expanded="true" />
+            <element signature="e#3286#3294#0" expanded="true" />
+            <element signature="e#3423#3431#0" expanded="true" />
+            <element signature="e#3573#3581#0" expanded="true" />
+            <element signature="e#3715#3723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding>
+            <element signature="e#4180#4333#0" expanded="false" />
+            <element signature="e#4332#4333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2850#2858#0" expanded="true" />
+            <element signature="e#3006#3014#0" expanded="true" />
+            <element signature="e#3141#3149#0" expanded="true" />
+            <element signature="e#3286#3294#0" expanded="true" />
+            <element signature="e#3423#3431#0" expanded="true" />
+            <element signature="e#3573#3581#0" expanded="true" />
+            <element signature="e#3715#3723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding>
+            <element signature="e#4180#4333#0" expanded="false" />
+            <element signature="e#4332#4333#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/main_window.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainController.java" />
@@ -837,64 +996,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/progress/Progress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/main_window.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/InformationWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1546">
-          <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+        <state relative-caret-position="100">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="e#3376#3534#0" expanded="true" />
-            <element signature="e#3533#3534#0" expanded="true" />
+            <element signature="e#1838#2034#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/invoker/progress/Progress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/information/information_window.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ScreenShutExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="293">
+          <caret line="141" column="132" selection-start-line="141" selection-start-column="132" selection-end-line="141" selection-end-column="132" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/MainWindowExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state relative-caret-position="300">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/GIFExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="85" column="129" selection-start-line="85" selection-start-column="129" selection-end-line="85" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/ExchangeExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="123" column="116" selection-start-line="123" selection-start-column="116" selection-end-line="123" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CombineVideoExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1131">
+          <caret line="72" column="120" selection-start-line="72" selection-start-column="120" selection-end-line="72" selection-end-column="120" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/xuyihao/formatter/ui/window/information/information_window.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutVideoExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="67" column="124" selection-start-line="67" selection-start-column="124" selection-end-line="67" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/executor/CutImageExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="102" column="116" selection-start-line="102" selection-start-column="116" selection-end-line="102" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xuyihao/formatter/ui/window/main/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        <state relative-caret-position="91">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1655#1685#0" expanded="true" />
             <element signature="e#2850#2858#0" expanded="true" />
             <element signature="e#3006#3014#0" expanded="true" />
             <element signature="e#3141#3149#0" expanded="true" />

@@ -54,11 +54,11 @@ public class ExchangeExecutor {
 					if (splitVideoOutputType == null || splitVideoOutputType.equals("")) {
 						new WarningWindow("File suffix is null!").show();
 					} else {
-						final InformationWindow informationWindow = new InformationWindow("分离视频中...", 18.0);
-						informationWindow.show();
 						String inputVideoPathName = inputFile;
 						String outputVideoPathName = outputPath + File.separator + outputName + splitVideoOutputType;
 						final Progress progress = Executor.splitVideo(inputVideoPathName, outputVideoPathName);
+						final InformationWindow informationWindow = new InformationWindow("分离视频中...", 18.0, progress);
+						informationWindow.show();
 						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {
@@ -86,11 +86,11 @@ public class ExchangeExecutor {
 					if (splitAudioOutputType == null || splitAudioOutputType.equals("")) {
 						new WarningWindow("File suffix is null!").show();
 					} else {
-						final InformationWindow informationWindow = new InformationWindow("分离音频中...", 18.0);
-						informationWindow.show();
 						String inputVideoPathName = inputFile;
 						String outputAudioPathName = outputPath + File.separator + outputName + splitAudioOutputType;
 						final Progress progress = Executor.splitAudio(inputVideoPathName, outputAudioPathName);
+						final InformationWindow informationWindow = new InformationWindow("分离音频中...", 18.0, progress);
+						informationWindow.show();
 						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {
@@ -118,11 +118,11 @@ public class ExchangeExecutor {
 					if (convertFormatOutputType == null || convertFormatOutputType.equals("")) {
 						new WarningWindow("File suffix is null!").show();
 					} else {
-						final InformationWindow informationWindow = new InformationWindow("格式转换中...", 18.0);
-						informationWindow.show();
 						String inputVideoPathName = inputFile;
 						String outputVideoPathName = outputPath + File.separator + outputName + convertFormatOutputType;
 						final Progress progress = Executor.convertFromat(inputVideoPathName, outputVideoPathName);
+						final InformationWindow informationWindow = new InformationWindow("格式转换中...", 18.0, progress);
+						informationWindow.show();
 						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {

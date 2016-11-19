@@ -80,11 +80,11 @@ public class GIFExecutor {
 								if (outputFileName == null || outputFileName.equals("")) {
 									new WarningWindow("outputFileName is null !").show();
 								} else {
-									final InformationWindow informationWindow = new InformationWindow("生成GIF中...", 18.0);
-									informationWindow.show();
 									final Progress progress = Executor.generateGIFImage(inputFile, Integer.parseInt(beginTime),
 											Integer.parseInt(lastTime), Integer.parseInt(sizeX), Integer.parseInt(sizeY),
 											outputPath + File.separator + outputFileName + ".gif");
+									final InformationWindow informationWindow = new InformationWindow("生成GIF中...", 18.0, progress);
+									informationWindow.show();
 									informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 									new Thread(new Runnable() {
 										public void run() {

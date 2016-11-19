@@ -86,11 +86,11 @@ public class ScreenShutExecutor {
 								if (outputFileType == null || outputFileType.equals("")) {
 									new WarningWindow("outputFileType is null !").show();
 								} else {
-									final InformationWindow informationWindow = new InformationWindow("截屏中...", 18.0);
-									informationWindow.show();
 									final Progress progress = Executor.recordScreenForImage(Integer.parseInt(offsetX),
 											Integer.parseInt(offsetY), Integer.parseInt(sizeX), Integer.parseInt(sizeY),
 											outputPath + File.separator + outputFileName + outputFileType);
+									final InformationWindow informationWindow = new InformationWindow("截屏中...", 18.0, progress);
+									informationWindow.show();
 									informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 									new Thread(new Runnable() {
 										public void run() {
@@ -136,11 +136,11 @@ public class ScreenShutExecutor {
 									if (frameRate == null || frameRate.equals("")) {
 										new WarningWindow("frameRate is null !").show();
 									} else {
-										final InformationWindow informationWindow = new InformationWindow("屏幕录制中...", 18.0);
-										informationWindow.show();
 										final Progress progress = Executor.recordScreenForVideo(Integer.parseInt(frameRate),
 												Integer.parseInt(offsetX), Integer.parseInt(offsetY), Integer.parseInt(sizeX),
 												Integer.parseInt(sizeY), outputPath + File.separator + outputFileName + outputFileType);
+										final InformationWindow informationWindow = new InformationWindow("屏幕录制中...", 18.0, progress);
+										informationWindow.show();
 										informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 										new Thread(new Runnable() {
 											public void run() {

@@ -68,10 +68,10 @@ public class CombineVideoExecutor {
 						if (outputFileType == null || outputFileType.equals("")) {
 							new WarningWindow("outputFileType is null !").show();
 						} else {
-							final InformationWindow informationWindow = new InformationWindow("视频合成中...", 18.0);
-							informationWindow.show();
 							final Progress progress = Executor.compoundVideoAndAudio(inputVideo, inputAudio,
 									outputFilePath + File.separator + outputFileName + outputFileType);
+							final InformationWindow informationWindow = new InformationWindow("视频合成中...", 18.0, progress);
+							informationWindow.show();
 							informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 							new Thread(new Runnable() {
 								public void run() {

@@ -63,10 +63,10 @@ public class CutImageExecutor {
 						if (outputFileType == null || outputFileType.equals("")) {
 							new WarningWindow("Output file suffix is null !").show();
 						} else {
-							final InformationWindow informationWindow = new InformationWindow("截图中...", 18.0);
-							informationWindow.show();
 							final Progress progress = Executor.cutoutVideoForSingleImage(inputFile,
 									outputPath + File.separator + outputFileName + outputFileType, Float.parseFloat(cutTime));
+							final InformationWindow informationWindow = new InformationWindow("截图中...", 18.0, progress);
+							informationWindow.show();
 							informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 							new Thread(new Runnable() {
 								public void run() {
@@ -98,10 +98,10 @@ public class CutImageExecutor {
 					if (cutRate == null || cutRate.equals("")) {
 						new WarningWindow("CutRate is null !").show();
 					} else {
-						final InformationWindow informationWindow = new InformationWindow("截图片组中...", 18.0);
-						informationWindow.show();
 						final Progress progress = Executor.cutoutVideoForImageArray(inputFile, outputPath, outputFileType,
 								Float.parseFloat(cutRate));
+						final InformationWindow informationWindow = new InformationWindow("截图片组中...", 18.0, progress);
+						informationWindow.show();
 						informationWindow.appendInformationMessage("\r\nCommand--> \r\n#" + progress.getCommand());
 						new Thread(new Runnable() {
 							public void run() {

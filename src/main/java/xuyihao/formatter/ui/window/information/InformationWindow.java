@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import xuyihao.formatter.invoker.progress.Progress;
 
 /**
  * 定义简单的消息显示窗口
@@ -17,18 +18,21 @@ import javafx.stage.Stage;
  *
  */
 public class InformationWindow {
+	private Progress progress;
 	private Stage stage;// 窗口
 	/**
 	 * 控件
 	 */
 	private TextArea textArea;
 	private Button btnCloseWindow;
+	private Button btnKillProcess;
 
 	/**
 	 * 
 	 * @param fontSize 字体大小
 	 */
-	public InformationWindow(String informationMessage, double fontSize) {
+	public InformationWindow(String informationMessage, double fontSize, Progress progress) {
+		this.progress = progress;
 		Parent parent = null;
 		try {
 			parent = FXMLLoader.load(getClass().getResource("information_window.fxml"));
@@ -53,6 +57,7 @@ public class InformationWindow {
 		textArea.setText(message);
 		textArea.setFont(Font.font(fontSize));
 		btnCloseWindow = (Button) parent.lookup("#information_window_button_closeWindow");
+		btnKillProcess = (Button) parent.lookup("#information_window_button_killProcess");
 	}
 
 	/**
@@ -62,6 +67,14 @@ public class InformationWindow {
 		btnCloseWindow.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
 				stage.close();
+			}
+		});
+		btnKillProcess.setOnAction(new EventHandler<ActionEvent>() {
+			public void handle(ActionEvent event) {
+				if(progress != null){
+					progress.stopProcess();
+					appendInformationMessage("\r\n-->子进程关闭成功!");
+				}
 			}
 		});
 	}
@@ -78,7 +91,7 @@ public class InformationWindow {
 	/**
 	 * 添加消息
 	 * 
-	 * @param message
+	 * @param appendedMessage
 	 */
 	public void appendInformationMessage(String appendedMessage) {
 		textArea.appendText(appendedMessage);
