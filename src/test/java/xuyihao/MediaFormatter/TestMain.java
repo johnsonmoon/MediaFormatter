@@ -1,5 +1,11 @@
 package xuyihao.MediaFormatter;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 import xuyihao.formatter.invoker.executer.Executor;
 import xuyihao.formatter.invoker.progress.Progress;
 import xuyihao.formatter.util.CommonUtils;
@@ -24,5 +30,25 @@ public class TestMain {
 			}
 		}).start();
 		result = progress.waitFor();
+	}
+
+	public static void test() {
+		List<String> command = new ArrayList<String>();
+		command.add("java");
+		command.add("-version");
+		ProcessBuilder builder = new ProcessBuilder(command);
+		Process process = null;
+		try {
+			process = builder.start();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		while (process.isAlive()) {
+			try {
+				System.out.println(new BufferedReader(new InputStreamReader(process.getInputStream())).readLine());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }
