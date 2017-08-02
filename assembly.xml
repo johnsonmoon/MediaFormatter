@@ -14,9 +14,21 @@
 	</dependencySets>
 	<fileSets>
 		<fileSet>
+			<directory>/conf</directory>
+			<outputDirectory>conf</outputDirectory>
+		</fileSet>
+		<fileSet>
 			<directory>/src/main/bin</directory>
 			<outputDirectory>/</outputDirectory>
 			<fileMode>0766</fileMode>
+		</fileSet>
+		<fileSet>
+			<directory>${JAVA_HOME}/jre</directory>
+			<outputDirectory>jre</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${FFMPEG_HOME}</directory>
+			<outputDirectory>ffmpeg</outputDirectory>
 		</fileSet>
 	</fileSets>
 </assembly>

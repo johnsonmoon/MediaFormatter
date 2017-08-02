@@ -1,5 +1,7 @@
 package xuyihao.formatter.ui.window.main;
 
+import java.net.URL;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXMLLoader;
@@ -32,7 +34,10 @@ public class MainWindow extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		MainWindow.MAIN_WINDOW_STAGE_CONTEXT = primaryStage;
-		Parent root = FXMLLoader.load(getClass().getResource("main_window.fxml"));
+		URL url = Thread.currentThread().getContextClassLoader().getResource("main_window.fxml");
+		if (url == null)
+			System.exit(0);
+		Parent root = FXMLLoader.load(url);
 		initView(root);
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);

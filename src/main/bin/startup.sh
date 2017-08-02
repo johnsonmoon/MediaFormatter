@@ -1,1 +1,1 @@
-java -classpath "./lib/*:$CLASSPATH" xuyihao.formatter.ui.window.main.MainWindow
+./jre/bin/java -classpath "./lib/*;%CLASSPATH%" xuyihao.formatter.ui.window.main.MainWindow

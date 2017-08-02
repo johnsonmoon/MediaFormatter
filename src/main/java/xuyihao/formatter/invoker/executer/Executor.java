@@ -13,8 +13,7 @@ import xuyihao.formatter.util.CommonUtils;
  *
  */
 public class Executor {
-	public static final String ffmpegExecutorPathName = AppPropertiesLoader.getAppProperties()
-			.getProperty("FFMPEG_EXECUTOR_PATHNAME");
+	public static final String ffmpegExecutorPathName = AppPropertiesLoader.getProperty("FFMPEG_EXECUTOR_PATHNAME");
 
 	/**
 	 * 分离视频中的视频
